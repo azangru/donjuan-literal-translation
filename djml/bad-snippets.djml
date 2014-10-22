@@ -1,4 +1,4 @@
-{{-- VARIOUS PARSING ERROR --}}
+{{-- VARIOUS PARSING ERRORS --}}
 
 {{-- end without beginning --}}
 {_^_}
