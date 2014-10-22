@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE MODES SYSTEM "catalog.dtd">
+
+<MODES>
+
+<MODE NAME="djml" FILE="djml.xml" FILE_NAME_GLOB="*.djml"/>
+
+</MODES>

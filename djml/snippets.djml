@@ -1,0 +1,94 @@
+{{-- implicit stanza, no comments --}}
+Sed congue graece suavitate cu.
+Impetus suscipiantur ut nec,
+Cum cotidieque instructior in.
+
+{{-- explicit stanza, no comments --}}
+{1}
+Graeco molestiae ne pro, nam
+At iisque consulatu, deserunt
+Dissentiet has ne. Id nec
+Illum tantas deterruisset.
+
+{{-- explicit stanza, no comments, explicit end --}}
+{blah}
+Graeco molestiae ne pro, nam
+At iisque consulatu, deserunt
+Dissentiet has ne. Id nec
+Illum tantas deterruisset.
+{_^_}
+
+{{-- explicit stanza, fragment comments, multiple types --}}
+{2}
+Illum graeco te sea, in pro {{dicam ignota | "dicam ignota" consensus 01 |alt> "dicam ignota" (alt) | "dicam ignota" consensus 02}} legimus,
+Affert vituperata vis in. No tale electram facilisis sea.
+
+{{-- implicit stanza, simulated pointed comment--}}
+Illum graeco te sea, in pro dicam ignota legimus,
+Affert vituperata vis in. No tale electram{{| "electram" simulated pointed}}facilisis sea.
+
+{{-- implicit stanza, multiline fragment comment --}}
+(эта старая песня, и новое сравнение очень уместны): —
+„{{Какое лакомое блюдо поставили перед Королем
+  | Байрон продолжает цитировать детскую песню:
+
+  When the pie was opened,
+  The birds began to sing;
+  To set before the king?
+
+  («Когда пирог разрезали, птицы запели: не правда ли, лакомое кушанье поставили перед королем?»).
+}}“!»
+или Регентом, который обожает такого рода еду.
+
+
+{{-- explicit stanza, no comments, html tags --}}
+{XI}
+от времени и тяжких испытаний, с теми же беспомощными глазами
+и бессердечными дочерьми, – измученный и бледный и нищий,
+<i>он</i> возлюбил бы султана? <a href="google.com">Он</a> стал бы повиноваться
+интеллектуальному евнуху Каслрею?
+
+{{-- explicit stanza, multiple pointed comments --}}
+{XIII}
+Говорилище до того привычного словесного мусора{{1}},
+неописуемо, узаконенно{{2}} отвратительного,
+что даже самые отъявленные льстецы не осмеливаются его похвалить,
+
+{{>1 Буквально: «оратор такого отвердевшего мусора из фраз...»}}
+{{>2 Каслрей проводил государственную политику.}}
+
+{{-- explicit stanza, single pointed comment --}}
+{XIV}
+Ничтожество, даже в своем мерзком ремесле,
+неуклюже латающее{{}}, клепающее и всё равно оставляющее за собой
+нечто, пугающее его хозяев,
+
+{{> В этой строфе Байрон дает обширный синонимический ряд глаголов и глагольных производных со значением починки, причем починки неловкой: botch («грубо чинить»), patch («латать»), cobble («грубо чинить»), tinker («чинить металлические изделия»), mend («исправлять, восстанавливать»).}}
+
+{{-- implicit stanza, multi-type fragment comments --}}
+под ложью, которою дохнуло на тебя это {{политиканствующее существо |alt> Или: «под ложью, которою дохнуло на тебя это государственное нечто». Существует прочтение, согласно которому английское “state-thing” относится уже не к Каслрею, а к Венскому конгрессу — европейскому договору, в результате которого в Италии была восстановлена власть Папы.}}.
+Твои гремящие цепи и все еще {{свежие | Буквально: зеленые (green). |wrp> Можно было и "зеленые" написать :-) }} раны Эрин
+Имеют голоса и языки, чтобы воззвать ко мне.
+
+{{-- implicit stanza, multi-type pointed comments --}}
+под ложью, которою дохнуло на тебя это{{1}}.
+Твои гремящие цепи и все еще{{2}} раны Эрин
+Имеют голоса и языки, чтобы воззвать ко мне.
+
+{{1> политиканствующее существо |alt> Или: «под ложью, которою дохнуло на тебя это государственное нечто». Существует прочтение, согласно которому английское “state-thing” относится уже не к Каслрею, а к Венскому конгрессу — европейскому договору, в результате которого в Италии была восстановлена власть Папы.}}
+{{2> свежие | Буквально: зеленые (green). |wrp> Можно было бы и "зеленые" написать :-) }}
+
+{{-- explicit stanza, mixed comments --}}
+{XXX}
+под ложью, которою дохнуло на тебя это{{1}}.
+Твои гремящие цепи и все еще{{2}} раны {{Эрин| Старое самоназвание Ирландии.}}
+Имеют голоса и языки, чтобы воззвать{{}} ко мне.
+
+{{1> политиканствующее существо |alt> Или: «под ложью, которою дохнуло на тебя это государственное нечто». Существует прочтение, согласно которому английское “state-thing” относится уже не к Каслрею, а к Венскому конгрессу — европейскому договору, в результате которого в Италии была восстановлена власть Папы.}}
+{{2> свежие | Буквально: зеленые (green). |wrp> Можно было бы и "зеленые" написать :-) }}
+{{> "воззвать": cry aloud}}
+
+{{-- implicit stanza, ends with EOF --}}
+Tempor etiam duis in, in luctus varius
+Nulla in nascetur sodales. Laoreet praesent,
+Vitae a massa, vel velit urna leo.
