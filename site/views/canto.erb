@@ -1,1 +1,40 @@
-this is canto
+<table>
+  <% @russian_stanzas.each_with_index do |st, index| %>
+    <% to_html(st) %>
+    <% number = get_stanza_number(st) %>
+    <% stanza = remove_number(st) %>
+    <tr>
+      <td><%= number %></td>
+      <td><%= number %></td>
+    </tr>
+    <tr>
+      <% to_html(@english_stanzas[index]) %>
+      <% english_stanza = remove_number(@english_stanzas[index]) %>
+      <td><%= english_stanza %></td>
+      <td><%= stanza %></td>
+    </tr>
+  <%end%>
+</table>
+
+
+<div class="footnote-container">
+  <div class="close-footnote"><a href="#">X</a></div>
+  <% @comments.each do |comment| %>
+    <% to_html(comment) %>
+    <% comment_number = comment.match(/\\comment-(\d+)/)[1] %>
+    <% comment_text = comment.match(/{(.*)}/)[1] %>
+    <%= "<div class='footnote' data-comment='#{comment_number}'>" %>
+    <%= comment_text %>
+    </div>
+  <% end %>
+
+  <% @alternatives.each do |alternative| %>
+    <% to_html(alternative) %>
+    <% alt_number = alternative.match(/\\alternative-(\d+)/)[1] %>
+    <% alt_text = alternative.match(/{(.*)}/)[1] %>
+    <%= "<div class='footnote' data-alternative='#{alt_number}'>" %>
+    <%= alt_text %>
+    </div>
+  <% end %>
+</div>
+
