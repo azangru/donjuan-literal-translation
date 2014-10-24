@@ -1,4 +1,4 @@
-require 'pry'
+# require 'pry'
 require 'open-uri'
 
 class Podstrochnik < Sinatra::Base
