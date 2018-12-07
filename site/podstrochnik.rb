@@ -73,8 +73,8 @@ class Podstrochnik < Sinatra::Base
 
 
   def get_texts(name)
-    russian_text = open("https://rawgit.com/azangru/donjuan-literal-translation/master/russian/#{name}.txt") {|f| f.read }
-    english_text = open("https://rawgit.com/azangru/donjuan-literal-translation/master/english/#{name}.txt") {|f| f.read }
+    russian_text = open("https://cdn.jsdelivr.net/gh/azangru/donjuan-literal-translation/russian/#{name}.txt") {|f| f.read }
+    english_text = open("https://cdn.jsdelivr.net/gh/azangru/donjuan-literal-translation/english/#{name}.txt") {|f| f.read }
     texts = {russian: russian_text, english: english_text}
   end
 
